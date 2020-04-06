@@ -21,7 +21,7 @@ def get_instruments_list(directories):
     return list_instrument
 
 
-def get_notes(directories=['dataset'],sampling_frequency=50,save_at='notes/session_note'):
+def get_notes(directories=['dataset'],sampling_frequency=50,save_at='notes'):
     notes=[]
     if(os.path.exists(save_at)):
         with open(save_at,'rb') as f:
